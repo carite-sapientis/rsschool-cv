@@ -1,6 +1,6 @@
 # Kristina Erokhina
 
-<img src="/assets/img/photo.jpg" alt="photo" width="200"/>
+<img src="assets/img/photo.jpg" alt="photo" width="200"/>
 
 ## Contacts:
 
