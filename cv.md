@@ -1,5 +1,7 @@
 # Kristina Erokhina
 
+<img src="/assets/img/photo.jpg" alt="photo" width="200"/>
+
 ## Contacts:
 
 📷 Instagram: [@kristina-void](https://www.instagram.com/kristina.void/)  
