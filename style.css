@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #013750;
+  font-size: 1.2em;
+  display: grid;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* Header */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1em 1em;
+}
+
+.menu-link {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #02c0fa;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-link a {
+  overflow: hidden;
+}
+.menu-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.15em;
+  bottom: 0;
+  left: 0;
+  background-color: #02c0fa;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu-link:visited {
+  color: #3378a7;
+}
+
+/* About section */
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about-photo {
+  padding-right: 2em;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #0297fa;
+  margin: 1em 0;
+}
+.userpic {
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.userpic:hover {
+  border-radius: 10%;
+  opacity: 1;
+}
+
+section {
+  padding: 1em;
+}
+
+.section-item a {
+  color: #0297fa;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.section-item a:hover {
+  color: #02c0fa;
+  border-bottom: 1px dashed;
+}
+
+/* Code */
+code {
+  font-family: "Courier New", "Courier", monospace;
+  overflow: hidden;
+}
+
+/* Contacts section */
+.contacts ul {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin: 0 auto;
+  }
+  .menu {
+    flex-flow: column;
+  }
+}
